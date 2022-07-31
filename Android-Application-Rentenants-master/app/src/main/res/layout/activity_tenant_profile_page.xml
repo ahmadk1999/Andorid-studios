@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TenantProfilePage"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/Edit_Tenant_Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:context=".tenantSignup">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Information"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBarTenantEdit"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tenantEmailAddressEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="10dp"
+                    android:hint="First Name"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:hint="Last Name"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTenantPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_security"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTenantConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_security"
+                    android:drawablePadding="10dp"
+                    android:hint="Confirm password"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editGrossMonthlySalary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_money"
+                    android:drawablePadding="10dp"
+                    android:hint="Gross Monthly Salary"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:drawablePadding="10dp"
+                    android:hint="Occupation"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editFamilySize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_family"
+                    android:drawablePadding="10dp"
+                    android:hint="Family Size:"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTenantPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:drawableLeft="@drawable/ic_contact_phone"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Phone Number"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/current_residence_country_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="gravity" />
+
+                <Spinner
+                    android:id="@+id/tenant_city_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_background"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textAlignment="gravity"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/tenant_update_profile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:drawableLeft="@drawable/ic_update"
+                    android:drawablePadding="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintEnd_toEndOf="@+id/agencyName_edit"
+                    app:layout_constraintStart_toStartOf="@+id/agencyName_edit"
+                    app:layout_constraintTop_toBottomOf="@+id/city_spinner_agency_edit" />
+
+                <Button
+                    android:id="@+id/tenant_update_cancel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:drawableLeft="@drawable/ic_cancel"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="@+id/agency_update_profile"
+                    app:layout_constraintStart_toStartOf="@+id/agency_update_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/agency_update_profile" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Show_Tenant_Profile_Page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="132dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tenant Profile"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/profile_tenant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="3dp"
+            android:ems="10"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/profile_tenant_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="3dp"
+            android:ems="10"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_name"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_name"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_name" />
+
+        <TextView
+            android:id="@+id/profile_tenant_country_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_travel"
+            android:drawablePadding="3dp"
+            android:ems="10"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_email"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_email"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_email" />
+
+        <TextView
+            android:id="@+id/profile_tenant_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:drawablePadding="3dp"
+            android:ems="10"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_country_city"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_country_city"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_country_city" />
+
+        <TextView
+            android:id="@+id/profile_tenant_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:drawableLeft="@drawable/ic_contact_phone"
+            android:drawablePadding="3dp"
+            android:ems="10"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_gender"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_gender"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_gender" />
+
+        <TextView
+            android:id="@+id/profile_tenant_gross_monthly_salary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_phone_number"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_phone_number" />
+
+        <TextView
+            android:id="@+id/profile_tenant_occupation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_gross_monthly_salary"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_gross_monthly_salary"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_gross_monthly_salary" />
+
+        <TextView
+            android:id="@+id/profile_tenant_family_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_background"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_occupation"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_occupation"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_occupation" />
+
+        <Button
+            android:id="@+id/edit_tenant_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_background"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="@+id/profile_tenant_family_size"
+            app:layout_constraintTop_toBottomOf="@+id/profile_tenant_family_size" />
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/button_background"
+            android:text="Home Page"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_tenant_profile"
+            app:layout_constraintEnd_toEndOf="@+id/profile_tenant_family_size"
+            app:layout_constraintStart_toEndOf="@+id/edit_tenant_profile"
+            app:layout_constraintTop_toTopOf="@+id/edit_tenant_profile" />
+
+        <Button
+            android:id="@+id/tenatn_view_applications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="View Applications"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/home_button"
+            app:layout_constraintStart_toStartOf="@+id/edit_tenant_profile"
+            app:layout_constraintTop_toBottomOf="@+id/home_button" />
+
+        <Button
+            android:id="@+id/view_profile_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_background"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="View History"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/tenatn_view_applications"
+            app:layout_constraintEnd_toStartOf="@+id/tenatn_view_applications"
+            app:layout_constraintStart_toStartOf="@+id/edit_tenant_profile"
+            app:layout_constraintTop_toTopOf="@+id/tenatn_view_applications" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Android Lab Project</string>
+
+    <string-array name="array_countries">
+        <item>Please select a country</item>
+        <item>China</item>
+        <item>India</item>
+        <item>Brazil</item>
+        <item>Russia</item>
+        <item>Japan</item>
+        <item>Italy</item>
+    </string-array>
+
+    <string-array name="array_cities">
+        <item>Please select a city</item>
+        <item>Beijing</item>
+        <item>Mumbai</item>
+        <item>Sao Paulo</item>
+        <item>Moscow</item>
+        <item>Nagoya</item>
+        <item>Milan</item>
+    </string-array>
+
+    <string-array name="array_default_cities">
+        <item>Please select a country first!</item>
+    </string-array>
+    <string-array name="China">
+        <item>Please select a city</item>
+        <item>Hong Kong</item>
+        <item>Beijing</item>
+    </string-array>
+    <string-array name="India">
+        <item>Please select a city</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+    </string-array>
+    <string-array name="Brazil">
+        <item>Please select a city</item>
+        <item>Sao Paulo</item>
+        <item>Rio de Janeiro</item>
+    </string-array>
+    <string-array name="Russia">
+        <item>Please select a city</item>
+        <item>Novosibirsk</item>
+        <item>Moscow</item>
+    </string-array>
+    <string-array name="Japan">
+        <item>Please select a city</item>
+        <item>Toyohashi</item>
+        <item>Nagoya</item>
+    </string-array>
+    <string-array name="Italy">
+        <item>Please select a city</item>
+        <item>Milan</item>
+        <item>Rome</item>
+    </string-array>
+
+
+    <string-array name="array_phone_zip_code">
+        <item>0086</item>
+        <item>0091</item>
+        <item>0055</item>
+        <item>0007</item>
+        <item>0081</item>
+        <item>0039</item>
+    </string-array>
+
+
+    <string-array name="array_nationalities">
+        <item>Please select a nationality</item>
+        <item>China</item>
+        <item>India</item>
+        <item>Brazil</item>
+        <item>Russia</item>
+        <item>Japan</item>
+        <item>Italy</item>
+    </string-array>
+
+    <string-array name="array_residence_countries_cities">
+        <item>Please select a country first!</item>
+    </string-array>
+    <string-array name="China1">
+        <item>Please select a residence country</item>
+        <item>Hong Kong</item>
+        <item>Beijing</item>
+    </string-array>
+    <string-array name="India1">
+        <item>Please select a city</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+    </string-array>
+    <string-array name="Brazil1">
+        <item>Please select a city</item>
+        <item>Sao Paulo</item>
+        <item>Rio de Janeiro</item>
+    </string-array>
+    <string-array name="Russia1">
+        <item>Please select a city</item>
+        <item>Novosibirsk</item>
+        <item>Moscow</item>
+    </string-array>
+    <string-array name="Japan1">
+        <item>Please select a city</item>
+        <item>Toyohashi</item>
+        <item>Nagoya</item>
+    </string-array>
+    <string-array name="Italy1">
+        <item>Please select a city</item>
+        <item>Milan</item>
+        <item>Rome</item>
+    </string-array>
+
+    <string-array name="array_gender">
+        <item>Please select a gender</item>
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+</resources>
